@@ -1,0 +1,34 @@
+[2020-04-24 13:53:48] local.ERROR: ErrorException: Use of undefined constant read - assumed 'read' (this will throw an Error in a future version of PHP) in D:\Intero and Web\api-film\routes\web.php:15
+Stack trace:
+#0 D:\Intero and Web\api-film\routes\web.php(15): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(2, 'Use of undefine...', 'D:\\Intero and W...', 15, Array)
+#1 [internal function]: Closure->{closure}()
+#2 D:\Intero and Web\api-film\vendor\illuminate\container\BoundMethod.php(33): call_user_func_array(Object(Closure), Array)
+#3 D:\Intero and Web\api-film\vendor\illuminate\container\Util.php(36): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 D:\Intero and Web\api-film\vendor\illuminate\container\BoundMethod.php(79): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#5 D:\Intero and Web\api-film\vendor\illuminate\container\BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#6 D:\Intero and Web\api-film\vendor\illuminate\container\Container.php(592): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#7 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(289): Illuminate\Container\Container->call(Object(Closure), Array)
+#8 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#11 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#13 D:\Intero and Web\api-film\public\index.php(28): Laravel\Lumen\Application->run()
+#14 {main} {"exception":"[object] (ErrorException(code: 0): Use of undefined constant read - assumed 'read' (this will throw an Error in a future version of PHP) at D:\\Intero and Web\\api-film\outes\\web.php:15)
+[stacktrace]
+#0 D:\\Intero and Web\\api-film\outes\\web.php(15): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'Use of undefine...', 'D:\\\\Intero and W...', 15, Array)
+#1 [internal function]: Closure->{closure}()
+#2 D:\\Intero and Web\\api-film\\vendor\\illuminate\\container\\BoundMethod.php(33): call_user_func_array(Object(Closure), Array)
+#3 D:\\Intero and Web\\api-film\\vendor\\illuminate\\container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\Intero and Web\\api-film\\vendor\\illuminate\\container\\BoundMethod.php(79): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\Intero and Web\\api-film\\vendor\\illuminate\\container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Object(Closure), Object(Closure))
+#6 D:\\Intero and Web\\api-film\\vendor\\illuminate\\container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Object(Closure), Array, NULL)
+#7 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(289): Illuminate\\Container\\Container->call(Object(Closure), Array)
+#8 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#9 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#10 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#12 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#13 D:\\Intero and Web\\api-film\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 

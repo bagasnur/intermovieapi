@@ -1,0 +1,46 @@
+[2020-04-30 11:42:44] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "make:" is ambiguous.
+Did you mean one of these?
+    make:migration Create a new migration file
+    make:seeder    Create a new seeder class. in D:\Intero and Web\api-film\vendor\symfony\console\Application.php:685
+Stack trace:
+#0 D:\Intero and Web\api-film\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('make:')
+#1 D:\Intero and Web\api-film\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\Intero and Web\api-film\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\Intero and Web\api-film\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:\" is ambiguous.
+Did you mean one of these?
+    make:migration Create a new migration file
+    make:seeder    Create a new seeder class. at D:\\Intero and Web\\api-film\\vendor\\symfony\\console\\Application.php:685)
+[stacktrace]
+#0 D:\\Intero and Web\\api-film\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('make:')
+#1 D:\\Intero and Web\\api-film\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 D:\\Intero and Web\\api-film\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\Intero and Web\\api-film\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-04-30 11:42:59] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "make:middleware" is not defined.
+
+Did you mean one of these?
+    make:migration
+    make:seeder in D:\Intero and Web\api-film\vendor\symfony\console\Application.php:644
+Stack trace:
+#0 D:\Intero and Web\api-film\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('make:middleware')
+#1 D:\Intero and Web\api-film\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\Intero and Web\api-film\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\Intero and Web\api-film\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\Intero and Web\api-film\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:middleware\" is not defined.
+
+Did you mean one of these?
+    make:migration
+    make:seeder at D:\\Intero and Web\\api-film\\vendor\\symfony\\console\\Application.php:644)
+[stacktrace]
+#0 D:\\Intero and Web\\api-film\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('make:middleware')
+#1 D:\\Intero and Web\\api-film\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 D:\\Intero and Web\\api-film\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\Intero and Web\\api-film\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\Intero and Web\\api-film\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
