@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Builder;
 use App\Category;
+use App\Film;
 
 class CategoryController extends Controller
 {
@@ -52,7 +53,7 @@ class CategoryController extends Controller
    public function filterCategory(Request $request)
    {
       if($request->category){
-         $result = Category::where('name', 'like', '%' . $request->category . '%')->get();
+         $result = Film::where('category', 'like', '%' . $request->category . '%')->get();
 
          if ($result) {
             $data['code'] = 200;
