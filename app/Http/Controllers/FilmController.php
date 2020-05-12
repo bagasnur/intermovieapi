@@ -104,8 +104,8 @@ class FilmController extends Controller
          'banner' => $request->banner
       ]);
 
-      $explode1 = explode(",", $request->category);
-      $explode2 = explode(",", $request->production);
+      $explode1 = explode(", ", $request->category);
+      $explode2 = explode(", ", $request->production);
       $length1 = count($explode1);
       $length2 = count($explode2);
       $val1 = [];
@@ -150,8 +150,8 @@ class FilmController extends Controller
       $result->producer = $request->input('producer');
       $result->banner = $request->input('banner');
 
-      $explode1 = explode(",", $request->category);
-      $explode2 = explode(",", $request->production);
+      $explode1 = explode(", ", $request->category);
+      $explode2 = explode(", ", $request->production);
       $length1 = count($explode1);
       $length2 = count($explode2);
       $val1 = [];
