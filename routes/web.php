@@ -27,17 +27,12 @@ $router->delete('film/{id}', 'FilmController@destroy'); //Delete data by id
 
 //Category Route
 $router->get('category/list', 'CategoryController@index'); //Show all
+$router->get('category/top/', 'CategoryController@topCategory'); //Show Top Category
 $router->get('category/{id}', 'CategoryController@show'); //Show data by id
 $router->get('category', 'CategoryController@filterCategory'); //Search: category
 $router->post('category', 'CategoryController@store'); //Send data: name (string)
 $router->put('category/{id}', 'CategoryController@update'); //Update data: name (string)
 $router->delete('category/{id}', 'CategoryController@destroy'); //Delete data by id
-
-//Season Route
-$router->get('season/list', 'SeasonController@index');
-$router->post('season', 'SeasonController@store');
-$router->put('season/{id}', 'SeasonController@update');
-$router->delete('season', 'SeasonController@destroy');
 
 //Studio Route
 $router->get('studio/list', 'StudioController@index');
@@ -45,3 +40,9 @@ $router->get('studio/{id}', 'StudioController@show');
 $router->post('studio', 'StudioController@store');
 $router->put('studio/{id}', 'StudioController@update');
 $router->delete('studio', 'StudioController@destroy');
+
+// //Season Route
+// $router->get('season/list', 'SeasonController@index');
+// $router->post('season', 'SeasonController@store');
+// $router->put('season/{id}', 'SeasonController@update');
+// $router->delete('season', 'SeasonController@destroy');

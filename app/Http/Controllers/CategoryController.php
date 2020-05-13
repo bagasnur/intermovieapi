@@ -71,6 +71,22 @@ class CategoryController extends Controller
       return response()->json($data);
    }
 
+   public function topCategory()
+   {
+         $result = Category::orderBy('name', "ASC")->get();
+
+         if ($result) {
+            $data['code'] = 200;
+            $data['data_found'] = count($result);
+            $data['result'] = $result;
+         } else {
+            $data['code'] = 500;
+            $data['status_msg'] = 'Error';
+         }
+
+      return response()->json($data);
+   }
+
    public function store(Request $request)
    {
       $result = Category::create([

@@ -55,7 +55,7 @@ class FilmController extends Controller
    public function filterFilm(Request $request)
    {
       if ($request->search) {
-         $result = Film::where('title', 'like', '%'.$request->search.'%')->orWhere('production', 'like', '%'.$request->search.'%')->orWhere('producer', 'like', '%'.$request->search.'%')->get();
+         $result = Film::where('title', 'like', '%' . $request->search . '%')->orWhere('production', 'like', '%' . $request->search . '%')->orWhere('producer', 'like', '%' . $request->search . '%')->get();
 
          if ($result) {
             $data['code'] = 200;
